@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 
 
 }
 
+/*header*/
 header {
     background-color: black;
     height: 6em;
@@ -56,6 +58,149 @@ header {
 display: none;
 
 }
+/*sectionµ*/
+section{
+    
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+   
+
+}
+main{
+    background-color:  #EC485C;
+    margin: 2.5em;
+    height: 23.75em;
+    width: 84.688em;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.imagee{
+    
+    height: 20em;
+    width: 20em;
+    background-image: url(transparent.png);
+    background-size: 100% 100%;
+
+    
+
+    
+}
+.title3{
+    
+    height: 20em;
+    width: 26em;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+.twitter{
+    
+    height: 20em;
+    width: 26em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.image1{
+    height:8em ;
+    width: 8em;
+
+}
+ 
+h3, .petit.title{
+    color: rgb(5, 1, 1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ h1, .grande.titel{
+font-family: cursive;
+color: rgb(230, 220, 220);
+}
+h6{
+    color: rgb(243, 234, 234);
+    opacity: 70%;
+}
+button{
+    color: white;
+    background-color: black;
+}
+.aboutandgallery{
+     height: 61.563em; 
+    
+    width: 84.688em;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutme{
+    height: 61.563em;
+    width: 35.938em;
+    background-color: #EC485C;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.gallery{
+    height: 61.563em;
+    width: 30.938em;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h2{
+    color: black;
+    font-family: -webkit-pictograph;
+    font-size: 3em;
+
+}
+
+.parag{
+    color: white;
+    font-size: 30px;
+    width: 10em;
+    font-weight:inherit;
+    font-variant: small-caps;
+}
+span{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.imahe21{
+    width: 30.938em;
+    height: 15em;
+    border-radius: 20px;
+}
+.image22{
+    width: 30.938em;
+    height: 15em;
+    border-radius: 20px;
+}
+.image23{
+    width: 30.938em;
+    height: 15em;
+    border-radius: 20px;
+}
+.image31{
+    height: 15em;
+    width: 15em;
+    border-radius: 120px;
+}
+
+
 
 
 @media(max-width:48em) {
