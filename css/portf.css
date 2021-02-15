@@ -63,27 +63,28 @@ section{
     
     width: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
    
 
 }
-main{
+.maine{
     background-color:  #EC485C;
     margin: 2.5em;
     height: 23.75em;
     width: 84.688em;
     border-radius: 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
 .imagee{
     
-    height: 20em;
-    width: 20em;
+    height: 24em;
+    width: 23em;
     background-image: url(transparent.png);
     background-size: 100% 100%;
 
@@ -93,8 +94,8 @@ main{
 }
 .title3{
     
-    height: 20em;
-    width: 26em;
+    height: 15em;
+    width: 20em;
     display:flex ;
     flex-direction: column;
     justify-content: space-evenly;
@@ -102,10 +103,11 @@ main{
 
     
 }
+
 .twitter{
     
-    height: 20em;
-    width: 26em;
+    height: 15em;
+    width: 20em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,8 +202,57 @@ span{
     border-radius: 120px;
 }
 
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90em;
+    height: 33.563em;
+    border: #EC485C solid;
+    align-items: center;
+    
+}
+.skiils{
+width: 31em;
+height: 6.313em;
+background-color: #233D4C;
 
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 15px;
+}
+h5{
+    font-size: 50px;
+    color:  #EC485C;
+    font-family:cursive;
+}
+.my4skills{
+    height: 19.813em;
+    width:90em ;
+    border: tomato solid;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.skils1{
+    width: 20.313em;
+    height: 19.813em;
+    background-color:#233D4C ;
+    border-radius: 15px;
+}
+.skils2{   width: 20.313em;
+    height: 19.813em;
+    background-color:#233D4C ;
+    border-radius: 15px;}
+.skils3{  width: 20.313em;
+    height: 19.813em;
+    background-color:#233D4C ;
+    border-radius: 15px;}
+.skils4{  width: 20.313em;
+    height: 19.813em;
+    background-color:#233D4C ;
+    border-radius: 15px;}
 
 @media(max-width:48em) {
 
