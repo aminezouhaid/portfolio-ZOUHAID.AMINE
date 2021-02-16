@@ -80,8 +80,7 @@ section {
 
 .maine {
     background-color: #EC485C;
-
-    height: 23.75em;
+flex: 1;
     width: auto;
     border-radius: 20px;
     display: flex;
@@ -153,7 +152,7 @@ button {
 }
 
 .aboutandgallery {
-    height: a;
+   flex: 1;
 
     width: auto;
     display: flex;
@@ -230,7 +229,7 @@ span {
     flex-direction: column;
     justify-content: space-evenly;
     width: auto;
-    height: 33.563em;
+   flex: 1;
     border: #EC485C solid;
     align-items: center;
 
@@ -345,7 +344,7 @@ h5 {
     
         width: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
