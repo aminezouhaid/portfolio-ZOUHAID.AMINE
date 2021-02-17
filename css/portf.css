@@ -11,7 +11,7 @@
 
 /*header*/
 header {
-    background-color: black;
+    background-image: url(Kin.gif);
     height: 6em;
     width: auto;
     display: flex;
@@ -21,12 +21,16 @@ header {
 
 .logo {
 
-    height: 4em;
+    height: 100%;
     width: 15%;
     align-items: center;
     background-image: url(12.jpg);
     background-size: 100% 100%;
 
+}
+
+#toggle {
+    display: none;
 }
 
 .divnav {
@@ -47,6 +51,7 @@ header {
 .color {
     color: white;
     font-family: cursive;
+    text-decoration: none;
 }
 
 .color:hover {
@@ -87,12 +92,13 @@ height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 0 4em 0;
 }
 
 .imagee {
 
-    height: 24em;
-    width: 23em;
+    height: 19em;
+    width: 26em;
     background-image: url(transparent.png);
     background-size: 100% 100%;
 
@@ -151,17 +157,21 @@ button {
     color: white;
     background-color: black;
 }
+.span1{
+    color: blue;
+}
 
 .aboutandgallery {
     flex: 1;
-
-    width: auto;
+background-color: rgb(255, 251, 251);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 0 0 4em 0;
+    align-items: center;
 }
 
 .aboutme {
-    height: 61.563em;
+    height: 41.563em;
     width: 35.938em;
     background-color: #EC485C;
 
@@ -201,20 +211,20 @@ span {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.imahe21 {
-    width: 30.938em;
+.image21 {
+    width: 100%;
     height: 15em;
     border-radius: 20px;
 }
 
 .image22 {
-    width: 30.938em;
+    width: 100%;
     height: 15em;
     border-radius: 20px;
 }
 
 .image23 {
-    width: 30.938em;
+    width:  100%;
     height: 15em;
     border-radius: 20px;
 }
@@ -228,11 +238,12 @@ span {
 .section2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: auto;
     flex: 1;
-    border: #EC485C solid;
+   background-color: #EC485C;
     align-items: center;
+    margin: 0 0 4em 0;
 
 
 }
@@ -246,6 +257,8 @@ span {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    margin: 0 0 2em 0;
+    
 }
 
 h5 {
@@ -294,6 +307,16 @@ h5 {
     border-radius: 15px;
     margin-left: 2em;
 }
+footer{
+    
+        background-color: black;
+        height: 4em;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+}
 
 /* mediaquery*/
 
@@ -308,6 +331,7 @@ h5 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0 0 2em 0;
     }
     .imagee {
 
@@ -315,6 +339,7 @@ h5 {
         width: 35em;
         background-image: url(transparent.png);
         background-size: 100% 100%;
+        margin-left: 177px;
     
     
     }
@@ -345,7 +370,7 @@ h5 {
 
     .logo {
 
-        height: 4em;
+        height: 100%;
         width: 15%;
         align-items: center;
         background-image: url(12.jpg);
@@ -389,9 +414,18 @@ h5 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        margin: 0 0 2em 0;
+    
+    }
+    .parag {
+        color: white;
+        font-size: 30px;
+        width: 7em;
+        font-weight: inherit;
+        font-variant: small-caps;
     }
     .skiils {
-        width: 41.616em;
+        width: 42.100%;
         height: 6.313em;
         background-color: #233D4C;
     
@@ -416,7 +450,7 @@ h5 {
         background-color: #233D4C;
         border-radius: 0px;
         margin-left: 0;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
     
     .skils3 {
@@ -463,11 +497,182 @@ h5 {
 
     .logo {
 
-        height: 4em;
+        height : 100%;
         width: 30%;
         align-items: center;
         background-image: url(12.jpg);
         background-size: 100% 100%;
     }
 
+    /* Important styles */
+#toggle {
+    display: block;
+    width: 28px;
+    height: 30px;
+    margin: 30px auto 10px;
+    position: fixed;
+    right: 20px;
+    top: 37px;
+  }
+  
+  #toggle span:after,
+  #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  #toggle span:after{
+    top: 9px;
+  }
+  #toggle span {
+    position: relative;
+    display: block;
+  }
+  
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+    width: 100%;
+    height: 5px;
+    background-color: #888;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+  
+  /* on activation */
+  #toggle.on span {
+    background-color: transparent;
+  }
+  #toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  #toggle.on + #menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* menu appearance*/
+  #menu {
+    position: relative;
+    color: #999;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    background: #233D4C;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    /* just for this demo */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+  }
+   
+  ul, li, li a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  li a {
+    padding: 5px;
+    color: #888;
+    text-decoration: none;
+    transition: all .2s;
+  }
+  li a:hover,
+  li a:focus {
+    background: #EC485C;
+    color: #fff;
+  }
+  
+  
+  /* demo styles */
+  body { margin-top: 3em; background: #eee; color: #555; font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif; }
+  p, p a { font-size: 12px;text-align: center; color: #888; }
+
+    .image21 {
+        width: 100%;
+        height: 15em;
+        border-radius: 0px;
+    }
+    .image22 {
+        width: 100%;
+        height: 15em;
+        border-radius: 0px;
+    }
+    .image23{
+        width: 100%;
+        height: 15em;
+        border-radius: 0px;
+    }
+    h2 {
+        color: black;
+        font-family: -webkit-pictograph;
+        font-size: 2em;
+    }
+    .skiils {
+        width: 100%;
+        height: 6.313em;
+        background-color: #233D4C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px;
+    }
+    .imagee {
+        height: 15em;
+        background-image: url(transparent.png);
+        background-size: 100% 100%;
+        margin-left: 0px;
+        width: 90%;
+    }
+    .skils1 {
+        width: 20.313em;
+        height: 19.813em;
+        background-color: #233D4C;
+        border-radius: 0px;
+        margin-bottom: 1em;
+    }
+    
+    .skils2 {
+        width: 20.313em;
+        height: 19.813em;
+        background-color: #233D4C;
+        border-radius: 0px;
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+    
+    .skils3 {
+        width: 20.313em;
+        height: 19.813em;
+        background-color: #233D4C;
+        border-radius: 0px;
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+    
+    .skils4 {
+        width: 20.313em;
+        height: 19.813em;
+        background-color: #233D4C;
+        border-radius: 0px;
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+    .title3 {
+
+        height: 15em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
 }

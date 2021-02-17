@@ -24,7 +24,16 @@
 
                 </div>
             </div>
-            <img class="image" src="img/15.webp" alt="menu">
+            <a href="#menu" id="toggle"><span></span></a>
+
+            <div id="menu">
+            <ul>
+                <li><a href="#home">ABOUT ME</a></li>
+                <li><a href="#about">MY SKILLS</a></li>
+                <li><a href="#contact">ONTACT</a></li>
+            </ul>
+            </div>
+            <!-- <img class="image" src="img/15.webp" alt="menu"> -->
 
         </header>
         <section class="container">
@@ -50,7 +59,7 @@
               
                 <div class="gallery">
                     <h2> Gallery what i do </h2>
-                    <img class="imahe21" src="img/jj.jpeg" alt="coding">
+                    <img class="image21" src="img/jj.jpeg" alt="coding">
                     <img class="image22" src="img/hh.jfif" alt="shetrange">
                     <img class="image23" src="img/s-combat-taekwondo.jpg" alt="taekwondo">
                 </div>  <div class="aboutme">
@@ -66,15 +75,67 @@
         <div class="section2">
 
             <div class="skiils">
-                <h5> SKILLS</h5>
+                <h5> <span class="span1">S</span> K <span>I</span> L <span>L</span>S</h5>
             </div>
             <div class="my4skills">
-                <div class="skils1"></div>
+                <div class="skils1">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <div class="skils2"></div>
                 <div class="skils3"></div>
                 <div class="skils4"></div>
             </div>
         </div>
     </section>
+    <footer></footer>
+
+    <script>
+var theToggle = document.getElementById('toggle');
+
+// based on Todd Motto functions
+// https://toddmotto.com/labs/reusable-js/
+
+// hasClass
+function hasClass(elem, className) {
+	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+}
+// addClass
+function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+    	elem.className += ' ' + className;
+    }
+}
+// removeClass
+function removeClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+	if (hasClass(elem, className)) {
+        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+            newClass = newClass.replace(' ' + className + ' ', ' ');
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    }
+}
+// toggleClass
+function toggleClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+    if (hasClass(elem, className)) {
+        while (newClass.indexOf(" " + className + " ") >= 0 ) {
+            newClass = newClass.replace( " " + className + " " , " " );
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    } else {
+        elem.className += ' ' + className;
+    }
+}
+
+theToggle.onclick = function() {
+   toggleClass(this, 'on');
+   return false;
+}
+    </script>
+
+<footer></footer>
 </body>
 </html>
