@@ -56,7 +56,7 @@ header {
 
 .color:hover {
     font-family: cursive;
-    color: #EC485C;
+    color: white;
     font-size: 1.563em;
     text-decoration: none;
 }
@@ -85,7 +85,7 @@ height: auto;
 }
 
 .maine {
-    background-color: #EC485C;
+    background-color:#004a9e;
     flex: 1;
     width: auto;
    
@@ -158,7 +158,7 @@ button {
     background-color: black;
 }
 .span1{
-    color: blue;
+    color:#004a9e;
 }
 
 .aboutandgallery {
@@ -173,7 +173,7 @@ background-color: rgb(255, 251, 251);
 .aboutme {
     height: 41.563em;
     width: 35.938em;
-    background-color: #EC485C;
+    background-color: #004a9e;
 
     display: flex;
     flex-direction: column;
@@ -241,7 +241,7 @@ span {
     justify-content: space-around;
     width: auto;
     flex: 1;
-   background-color: #EC485C;
+   background-color: #004a9e;
     align-items: center;
     margin: 0 0 4em 0;
 
@@ -270,7 +270,7 @@ h5 {
 .my4skills {
     height: auto;
     width: auto;
-    border: tomato solid;
+   
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -317,10 +317,26 @@ footer{
         align-items: center;
     
 }
+.reseuS{
+    height: 100%;
+    width: 30%;
+    border: white solid;
+}
+.thanks{
+    height: 100%;
+    width: 15% ;
+    border: white solid;
+}
+.navfooter{
+    height:100%;
+    width: 40%;
+    border: white solid;
+}
+
 
 /* mediaquery*/
 
-@media (max-width:765px) {
+@media (max-width:768px) {
 
     .maine {
         background-color: #EC485C;
