@@ -10,68 +10,69 @@
 </head>
 
 <body>
-    
-        <header>
-            <div class="logo">
+
+    <header>
+        <div class="logo">
+
+        </div>
+        <div class="divnav">
+            <div class="navbar">
+                <a class="color" href="">ABOUT ME</a>
+                <a class="color" href="">MY SKILLS</a>
+                <a class="color" href="">MY WORK</a>
+                <a class="color" href="">CONTACT</a>
 
             </div>
-            <div class="divnav">
-                <div class="navbar">
-                    <a class="color" href="">ABOUT ME</a>
-                    <a class="color" href="">MY SKILLS</a>
-                    <a class="color" href="">MY WORK</a>
-                    <a class="color" href="">CONTACT</a>
+        </div>
+        <a href="#menu" id="toggle"><span></span></a>
 
-                </div>
-            </div>
-            <a href="#menu" id="toggle"><span></span></a>
-
-            <div id="menu">
+        <div id="menu">
             <ul>
                 <li><a href="#home">ABOUT ME</a></li>
                 <li><a href="#about">MY SKILLS</a></li>
                 <li><a href="#contact">ONTACT</a></li>
             </ul>
-            </div>
-            <!-- <img class="image" src="img/15.webp" alt="menu"> -->
+        </div>
+        <!-- <img class="image" src="img/15.webp" alt="menu"> -->
 
-        </header>
-        <section class="container">
-            <div class="maine">
-                <div class="imagee"></div>
-                <div class="title3">
+    </header>
+    <section class="container">
+        <div class="maine">
+            <div class="imagee"></div>
+            <div class="title3">
 
-                    <div>
-                        <h3 class="petit.title"> Hello !!</h3>
-                        <br>
-                        <h1 class="grande.titel">I'M AMINE ZOUHAID ! </h1>
+                <div>
+                    <h3 class="petit.title"> Hello !!</h3>
+                    <br>
+                    <h1 class="grande.titel">I'M AMINE ZOUHAID ! </h1>
 
-                        <h6>web designer and devloper</h6>
-                        <br> <br>
-                        <button>SEE MY PORTFOLIO</button>
-                    </div>
-                </div>
-
-                <div class="twitter"> <img class="image1" src="img/23931.png" alt=""></div>
-
-            </div>
-            <div class="aboutandgallery">
-              
-                <div class="gallery">
-                    <h2> Gallery what i do </h2>
-                    <img class="image21" src="img/jj.jpeg" alt="coding">
-                    <img class="image22" src="img/hh.jfif" alt="shetrange">
-                    <img class="image23" src="img/s-combat-taekwondo.jpg" alt="taekwondo">
-                </div>  <div class="aboutme">
-                    <h2>About me </h2>
-                    <p class="parag">My Name is <span >Zouhaid Amine </span> i’m 24 yours
-                        I'm a Developer Web And Desaigner From
-                        YOUCODE Welcoom To My Portfolio
-                    </p>
-                    <img class="image31" src="img/22.jfif" alt="">
+                    <h6>web designer and devloper</h6>
+                    <br> <br>
+                    <button>SEE MY PORTFOLIO</button>
                 </div>
             </div>
-    
+
+            <div class="twitter"> <img class="image1" src="img/23931.png" alt=""></div>
+
+        </div>
+        <div class="aboutandgallery">
+
+            <div class="gallery">
+                <h2> Gallery what i do </h2>
+                <img class="image21" src="css/aaaa.gif" alt="coding">
+                <img class="image22" src="css/azaz.gif" alt="shetrange">
+                <img class="image23" src="css/Badge05.gif" alt="taekwondo">
+            </div>
+            <div class="aboutme">
+                <h2>About me </h2>
+                <p class="parag">My Name is <span>Zouhaid Amine </span> i’m 24 yours
+                    I'm a Developer Web And Desaigner From
+                    YOUCODE Welcoom To My Portfolio
+                </p>
+                <img class="image31" src="img/22.jfif" alt="">
+            </div>
+        </div>
+
         <div class="section2">
 
             <div class="skiils">
@@ -79,8 +80,8 @@
             </div>
             <div class="my4skills">
                 <div class="skils1">
-                    <div></div>
-                    <div></div>
+                    <div class="html/css"> </div>
+                    <div class=" paragraphe"></div>
                     <div></div>
                 </div>
                 <div class="skils2"></div>
@@ -92,54 +93,60 @@
     <footer></footer>
 
     <script>
-var theToggle = document.getElementById('toggle');
+        var theToggle = document.getElementById('toggle');
 
-// based on Todd Motto functions
-// https://toddmotto.com/labs/reusable-js/
+        // based on Todd Motto functions
+        // https://toddmotto.com/labs/reusable-js/
 
-// hasClass
-function hasClass(elem, className) {
-	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
-}
-// addClass
-function addClass(elem, className) {
-    if (!hasClass(elem, className)) {
-    	elem.className += ' ' + className;
-    }
-}
-// removeClass
-function removeClass(elem, className) {
-	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
-	if (hasClass(elem, className)) {
-        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
-            newClass = newClass.replace(' ' + className + ' ', ' ');
+        // hasClass
+        function hasClass(elem, className) {
+            return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
         }
-        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-    }
-}
-// toggleClass
-function toggleClass(elem, className) {
-	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
-    if (hasClass(elem, className)) {
-        while (newClass.indexOf(" " + className + " ") >= 0 ) {
-            newClass = newClass.replace( " " + className + " " , " " );
+        // addClass
+        function addClass(elem, className) {
+            if (!hasClass(elem, className)) {
+                elem.className += ' ' + className;
+            }
         }
-        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-    } else {
-        elem.className += ' ' + className;
-    }
-}
+        // removeClass
+        function removeClass(elem, className) {
+            var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+            if (hasClass(elem, className)) {
+                while (newClass.indexOf(' ' + className + ' ') >= 0) {
+                    newClass = newClass.replace(' ' + className + ' ', ' ');
+                }
+                elem.className = newClass.replace(/^\s+|\s+$/g, '');
+            }
+        }
+        // toggleClass
+        function toggleClass(elem, className) {
+            var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, " ") + ' ';
+            if (hasClass(elem, className)) {
+                while (newClass.indexOf(" " + className + " ") >= 0) {
+                    newClass = newClass.replace(" " + className + " ", " ");
+                }
+                elem.className = newClass.replace(/^\s+|\s+$/g, '');
+            } else {
+                elem.className += ' ' + className;
+            }
+        }
 
-theToggle.onclick = function() {
-   toggleClass(this, 'on');
-   return false;
-}
+        theToggle.onclick = function () {
+            toggleClass(this, 'on');
+            return false;
+        }
     </script>
 
-<footer> 
-    <div class="reseuS"></div>
-    <div  class="thanks"></div>
-    <div class="navfooter"></div>
-</footer>
+    <footer>
+        <div class="reseuS"></div>
+        <div class="thanks"></div>
+        <div class="navfooter">
+            <a class="barre" href="">ABOUT ME</a>
+            <a class="barre" href="">MY SKILLS</a>
+            <a class="barre" href="">MY WORK</a>
+            <a class="barre" href="">CONTACT</a>
+        </div>
+    </footer>
 </body>
+
 </html>

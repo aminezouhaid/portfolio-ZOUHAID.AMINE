@@ -52,6 +52,7 @@ header {
     color: white;
     font-family: cursive;
     text-decoration: none;
+    transition: all .7s ease-in-out;
 }
 
 .color:hover {
@@ -97,8 +98,8 @@ height: auto;
 
 .imagee {
 
-    height: 19em;
-    width: 26em;
+    height:15em;
+    width: 28em;
     background-image: url(transparent.png);
     background-size: 100% 100%;
 
@@ -147,6 +148,44 @@ h1,
     font-family: cursive;
     color: rgb(230, 220, 220);
 }
+h1 {
+    width: 20ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: tapper 3s steps(35), blink 0.5s infinite;
+    border-right: 3px solid;
+  }
+
+  @keyframes tapper {
+    from {
+      width: 0ch;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  h1:click{
+    width: 20ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: tapper 3s steps(35), blink 0.5s infinite;
+    border-right: 3px solid;
+  }
+
+  @keyframes tapper {
+    from {
+      width: 0ch;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
 
 h6 {
     color: rgb(243, 234, 234);
@@ -173,7 +212,7 @@ background-color: rgb(255, 251, 251);
 .aboutme {
     height: 41.563em;
     width: 35.938em;
-    background-color: #004a9e;
+    background-color: #2066b6;
 
     display: flex;
     flex-direction: column;
@@ -241,7 +280,7 @@ span {
     justify-content: space-around;
     width: auto;
     flex: 1;
-   background-color: #004a9e;
+   background-color: #488bd8;
     align-items: center;
     margin: 0 0 4em 0;
 
@@ -287,7 +326,7 @@ h5 {
 .skils2 {
     width: 20.313em;
     height: 19.813em;
-    background-color: #233D4C;
+    background-color: #040505;
     border-radius: 15px;
     margin-left: 2em;
 }
@@ -331,6 +370,23 @@ footer{
     height:100%;
     width: 40%;
     border: white solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+.barre{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .7s ease-in-out;
+    
+}
+.barre:hover{
+    color:rgb(5, 3, 3);
+    background-color: #4784a7;
+    font-size: 25px;
 }
 
 
@@ -339,7 +395,7 @@ footer{
 @media (max-width:768px) {
 
     .maine {
-        background-color: #EC485C;
+        background-color: #004a9e;
         flex: 1;
         width: auto;
        height: auto;
@@ -576,7 +632,7 @@ footer{
   #menu {
     position: relative;
     color: #999;
-    width: 200px;
+    width: 159px;
     padding: 10px;
     margin: auto;
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
@@ -604,7 +660,7 @@ footer{
   }
   li a:hover,
   li a:focus {
-    background: #EC485C;
+    background: #004a9e;
     color: #fff;
   }
   
