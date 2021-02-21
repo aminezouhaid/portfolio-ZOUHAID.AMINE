@@ -27,6 +27,9 @@ header {
     background-size: 100% 100%;
 
 }
+.menubar{
+    display :none;
+}
 
 #toggle {
     display: none;
@@ -51,13 +54,13 @@ header {
     color: white;
     font-family: cursive;
     text-decoration: none;
-    transition: all 1.5s ease-in-out;
+    transition: all 1s ease-in-out;
 
 }
 
 .color:hover {
     font-family: cursive;
-    color: white;
+    color: #ff6539;
     font-size: 1.563em;
     text-decoration: none;
 }
@@ -733,7 +736,7 @@ a {
 
     .color:hover {
         font-family: cursive;
-        color: #EC485C;
+        color: #ff6539;
         font-size: 0.75em;
         text-decoration: none;
     }
@@ -849,7 +852,9 @@ a {
         background-image: url(12.jpg);
         background-size: 100% 100%;
     }
-
+    .menubar{
+        display :flex;
+    }
     /* Important styles */
     #toggle {
         display: block;
